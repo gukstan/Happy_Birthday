@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/androidparty"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:contentDescription="@string/todo"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -15,7 +26,7 @@
         android:layout_marginEnd="18dp"
         android:layout_marginBottom="635dp"
         android:fontFamily="sans-serif-light"
-        android:text="Happy Birthday, Gustavo!"
+        android:text="@string/happy_birthday_gustavo"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +41,7 @@
         android:layout_marginTop="696dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:text="From himself"
+        android:text="@string/from_himself"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,4 +49,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
